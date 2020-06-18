@@ -6,18 +6,45 @@
     --grey-color: #0f0f0f;
 }
 
+/*Var fonts*/
+:root {
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: .8rem;
+}
 
-*{
+@media screen and (max-width: 768px) {
+    :root{
+        --h1-font-size: 4.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1.1rem;
+        --small-font-size: .9rem;
+    }
+}
+
+
+*, ::before, ::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+html{
+    height: 100%; 
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--body-font);
     background-color: var(--black-color);
     color: var(--white-color);
     font-weight: 700;
+
+    /* min-height: 100%;
+    display: flex;
+    flex-direction: column; */
 }
 
 ul{
@@ -34,6 +61,7 @@ a{
 }
 
 nav{
+    /* flex: 1; */
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
@@ -42,10 +70,11 @@ nav{
 }
 
 .logo{
+    /* font-style: italic; */
     text-transform: uppercase;
     color: var(--white-color);
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: var(--normal-font-size);
 }
 
 .nav-links{
@@ -57,7 +86,7 @@ nav{
 .nav-links a{
     color: var(--white-color);
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: var(--small-font-size);
 }
 
 .burger{
@@ -73,6 +102,27 @@ nav{
     transition: .5s;
 }
 
+.rede-social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+
+    position: absolute;     /*Deixa em baixo*/
+    bottom: 1.5rem;
+}
+
+.rede-social a{
+    margin-right: 2rem;
+    font-size: 1.3rem;
+    color: var(--white-color);
+}
+
+.rede-social a:hover{
+    color: var(--first-color);
+    transition: .3s;
+}
+
 @media screen and (max-width: 1024px){
     .nav-links{
         width: 60%;
@@ -80,8 +130,9 @@ nav{
 }
 
 @media screen and (max-width: 768px){
-    body{
-        overflow-x: hidden;
+
+    .logo{
+        font-size: var(--normal-font-size);
     }
     
     .nav-links{
@@ -100,6 +151,7 @@ nav{
     }
     
     .nav-links a{
+        font-size: var(--small-font-size);
         display: flex;          /*Aumentando o tamanho da area de toque*/
         justify-content: space-around;
         align-items: center;
@@ -108,6 +160,15 @@ nav{
     }
     .burger{
         display: block;
+    }
+
+    .rede-social{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .rede-social a{
+        margin-top: 2rem;
     }
 }
 
@@ -128,6 +189,5 @@ nav{
 @media screen and (min-width: 1200px){
     .margin{
         margin: auto;
-        margin-top: 1rem;
     }
 }
