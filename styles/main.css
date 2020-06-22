@@ -161,15 +161,13 @@ body.light .theme{
     top: 1px;
     bottom: 1px;
     background-color: var(--black-color);
-    border-radius: 50%;
-    transition: .3s;
+    border-radius: 50%; 
+    transition: .5s;
+
 }
 
 body.light .ball{
-    height: 16px;
-    width: 16px;
-    top: 2px;
-    transform: translateX(29px);
+    right: 2px;
 }
 
 /*---- BURGER ----*/
@@ -205,14 +203,19 @@ body.light .ball{
 
 @media screen and (max-width: 1024px){
     .nav .nav-links{
-        width: 60%;
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 768px){
+
     footer{
         height: 180px;
         width: 20vh;
+    }
+
+    .nav .logo{
+        margin-right: 0;
     }
 
     .nav-links{
@@ -228,6 +231,7 @@ body.light .ball{
         width: 50%;
         transform: translateX(100%);
         transition: .5s;
+        z-index: 10;
     }
 
     body.light .nav-links{
@@ -236,7 +240,7 @@ body.light .ball{
 
     .nav-links a:hover{
         font-size: 2rem;
-        transition: .6s;
+        transition: .5s;
     }
 
     .nav-links a:hover::after{
@@ -245,6 +249,7 @@ body.light .ball{
 
     .burger{
         display: block;
+        margin-left: 5vh;
     }
 
     .rede-social{
