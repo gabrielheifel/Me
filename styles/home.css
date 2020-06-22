@@ -10,6 +10,10 @@
     border-left: 5px solid var(--white-color);
 }
 
+body.light .home-info{
+    border-left: 5px solid var(--black-color);
+}
+
 .home-info .home-topname{
     font-size: var(--small-font-size);
 }

@@ -4,6 +4,7 @@
     --black-color: #000;
     --white-color: #fff;
     --grey-color: #0f0f0f;
+    --grey-light-color: #cfcfcf;
 }
 
 /*Var fonts*/
@@ -74,6 +75,7 @@ footer{
     height: 100%;
 }
 
+/*---- NAVEGAÇAO ----*/
 .nav{
     height: 100%;
     display: flex;
@@ -86,6 +88,8 @@ footer{
     color: var(--white-color);
     letter-spacing: 4px;
     font-size: var(--normal-font-size);
+
+    margin-right: 50vh;
 }
 
 .nav-links{
@@ -113,6 +117,62 @@ footer{
     background-color: var(--first-color);
 }
 
+/*---- THEME ----*/
+body.light,
+body.light section,
+body.light footer,
+body.light .ball{
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+body.light header{
+    background-color: var(--grey-light-color);
+}
+
+body.light .logo,
+body.light .nav-links a,
+body.light .rede-social a{
+    color: var(--black-color);
+}
+
+body.light .burger div, 
+body.light .theme{
+    background-color: var(--black-color);
+}
+
+.theme{
+    margin-left: 2rem;
+
+    cursor: pointer;
+
+    position: relative;
+    height: 20px;
+    width: 50px;
+    padding: 2px;
+    border-radius: 50px;
+    background-color: var(--white-color);
+}
+
+.ball{
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 1px;
+    bottom: 1px;
+    background-color: var(--black-color);
+    border-radius: 50%;
+    transition: .3s;
+}
+
+body.light .ball{
+    height: 16px;
+    width: 16px;
+    top: 2px;
+    transform: translateX(29px);
+}
+
+/*---- BURGER ----*/
 .burger{
     display: none;
     cursor: pointer;
@@ -126,6 +186,7 @@ footer{
     transition: .5s;
 }
 
+/*---- FOOTER ----*/
 .rede-social{
     height: 100%;
     margin-top: 1rem;
@@ -169,6 +230,10 @@ footer{
         transition: .5s;
     }
 
+    body.light .nav-links{
+        background-image: linear-gradient(var(--grey-light-color), var(--white-color));
+    }
+
     .nav-links a:hover{
         font-size: 2rem;
         transition: .6s;
@@ -192,6 +257,7 @@ footer{
     }
 }
 
+/*---- ANIMATION BURGER ----*/
 .show-menu{
     transform: translateX(0%);
 }
@@ -211,3 +277,4 @@ footer{
         margin: auto;
     }
 }
+

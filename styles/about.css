@@ -2,25 +2,21 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-color);
 }
 
-.big-about{
+.about h1{
     font-size: var(--h1-font-size);
-    
-    position: absolute;
-    left: 15vh;
-    top: 25vh;
+    left: 0;
     opacity: .06;
     padding-left: 1.5rem;
     border-left: 5px solid var(--white-color);
 }
 
 .about-info{
-    position: absolute;
-    right: 10vh;
-    top: 45vh;
-    z-index: 1;
-
+    
     background-color: var(--black-color);
     padding: 30px;
     border-radius: 15px;
@@ -34,4 +30,10 @@
 
 .about-info p{
     font-size: var(--small-font-size);
+}
+
+@media screen and (min-weidth: 768px){
+    .about{
+        z-index: -1;
+    }
 }
