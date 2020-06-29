@@ -1,12 +1,14 @@
+let show = true
 
 const showMenu = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
 
     burger.addEventListener('click', () => {
-        nav.classList.toggle('show-menu');
+        nav.classList.toggle('show-menu', show);
+        burger.classList.toggle('burger-animation', show);
 
-        burger.classList.toggle('burger-animation');
+        show = !show;
     });
 }
 

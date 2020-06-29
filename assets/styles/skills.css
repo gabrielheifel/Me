@@ -1,5 +1,5 @@
 .skills{
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -17,6 +17,8 @@
     background-color: var(--black-color);
     padding: 30px;
     margin: 5px;
+    width: 60%;
+    /* height: 60%; */
     border-radius: 15px;
     box-shadow: 0 0 1.2rem var(--first-color);
 
@@ -26,8 +28,41 @@
     align-items: center;
 }
 
-.skills-info p{
-    font-size: var(--small-font-size);
+.skills li{
+    margin: 10px 0; 
+}
+
+.bar{
+    background: var(--black-color);
+    display: block;
+    height: 2px;
+    width: 75vh;
+    border: 1px solid rbga(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 5px var(--grey-light-color);
+}
+
+.bar span{
+    height: 10px;
+    float: left;
+    background-color: var(--first-color);
+}
+
+.c{
+    width: 60%;
+}
+.java{
+    width: 30%;
+}
+.javascript{
+    width: 45%;
+}
+.html{
+    width: 50%;
+}
+.css{
+    width: 60%;
 }
 
 body.light .skills{
