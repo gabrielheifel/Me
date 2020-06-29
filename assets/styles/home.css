@@ -23,3 +23,19 @@ body.light .home-info{
 .home-info .home-bottonname{
     font-size: var(--h2-font-size);
 }
+
+@media screen and (max-width: 768px){
+
+    footer{
+        height: 220px;
+        width: 20vh;
+    }
+    .rede-social{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rede-social a{
+        margin-bottom: 1rem;
+    }
+}

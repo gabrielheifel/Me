@@ -31,12 +31,6 @@
     overflow: hidden;
 }
 
-html{
-    /* position: fixed;
-    width: 100%; */
-    /* height: 100%; */
-}
-
 body{
     font-family: var(--body-font);
     color: var(--white-color);
@@ -214,11 +208,6 @@ body.light .ball{
 
 @media screen and (max-width: 768px){
 
-    footer{
-        height: 220px;
-        width: 20vh;
-    }
-
     .nav .logo{
         margin-right: 0;
     }
@@ -231,7 +220,7 @@ body.light .ball{
         position: absolute;
         right: 0;
         height: 92vh;
-        top: 8vh;
+        top: 10vh;
         background-image: linear-gradient(var(--black-color), var(--first-color));
         display: flex;
         flex-direction: column;
@@ -251,19 +240,7 @@ body.light .ball{
         display: block;
         margin-left: 5vh;
     }
-
-    .rede-social{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .rede-social a{
-        margin-bottom: 1rem;
-    }
 }
-
-/*---- RESPONSIVE JS ----*/
-
 
 /*---- ANIMATION BURGER ----*/
 

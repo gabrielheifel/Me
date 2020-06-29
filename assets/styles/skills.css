@@ -1,11 +1,10 @@
 .skills{
-    /* height: 100%; */
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: var(--grey-color);
-    height: 80%;
 }
 
 .skills h1{
@@ -13,59 +12,248 @@
     opacity: .2;
 }
 
+.option-skill{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.option-skill li{
+    cursor: pointer;
+    padding: 2px 15px 2px 15px;
+    border-radius: 15px;
+    background-color: var(--black-color);
+
+    display: flex;
+    align-items: center;
+}
+
+.me{
+    border: 2px solid var(--first-color);
+}
+.with:hover{
+    border: 2px solid var(--grey-light-color);
+}
+
 .skills-info{
     background-color: var(--black-color);
-    padding: 30px;
+    padding: 10px 30px 15px 30px;
     margin: 5px;
     width: 60%;
-    /* height: 60%; */
+    height: 60%;
     border-radius: 15px;
     box-shadow: 0 0 1.2rem var(--first-color);
 
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     justify-items: center;
-    align-items: center;
 }
 
-.skills li{
-    margin: 10px 0; 
+.skill-container{
+    width: 100%;
+    height: 8px;
+    background-color: var(--grey-color);
+    border-radius: 10px;
 }
 
-.bar{
-    background: var(--black-color);
-    display: block;
-    height: 2px;
-    width: 75vh;
-    border: 1px solid rbga(0,0,0,0.3);
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 0 5px var(--grey-light-color);
-}
-
-.bar span{
-    height: 10px;
-    float: left;
+/*---- Me (ONLOAD) ----*/
+.skill{
+    text-align: right; 
+    height: 8px;
     background-color: var(--first-color);
+    border-radius: 10px;
 }
 
-.c{
-    width: 60%;
+.c{    
+    width: 50%;
+    animation: c 1s;
 }
 .java{
-    width: 30%;
+    width: 20%;
+    animation: java 1s;    
 }
-.javascript{
-    width: 45%;
+.js{
+    width: 40%;
+    animation: js 1s;    
 }
 .html{
     width: 50%;
+    animation: html 1s;    
 }
 .css{
     width: 60%;
+    animation: css 1s;    
 }
 
-body.light .skills{
+/*---- Me ----*/
+.without-gs .c{
+    animation: c-without 1s;
+}
+.without-gs .java{
+    animation: java-without 1s;
+}
+.without-gs .js{
+    animation: js-without 1s;
+}
+.without-gs .html{
+    animation: html-without 1s;
+}
+.without-gs .css{    
+    animation: css-without 1s;
+}
+
+/*---- With Google / Stackoverflow ----*/
+.with-gs .skill{
+    background-color: var(--grey-light-color);
+}
+
+.with-gs .c{
+    width: 65%;
+    animation: c-with 1s;    
+}
+.with-gs .java{
+    width: 35%;
+    animation: java-with 1s;    
+}
+.with-gs .js{
+    width: 55%;
+    animation: js-with 1s;    
+}
+.with-gs .html{
+    width: 70%;
+    animation: html-with 1s;    
+}
+.with-gs .css{
+    width: 75%;
+    animation: css-with 1s;    
+}
+
+/* ---- Animation ----*/
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes c-with{
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes java-with{
+    0%{
+        width: 20%;
+    }
+    100%{
+        width: 35%;
+    }
+}
+@keyframes js-with{
+    0%{
+        width: 40%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+@keyframes html-with{
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes css-with{
+    0%{
+        width: 60%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes c-without{
+    0%{
+        width: 65%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes java-without{
+    0%{
+        width: 35%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+@keyframes js-without{
+    0%{
+        width: 55%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes html-without{
+    0%{
+        width: 70%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes css-without{
+    0%{
+        width: 75%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+/*---- Theme ----*/
+body.light .skills, 
+body.light .skill-container{
     background-color: var(--white-color);
 }
 
@@ -73,8 +261,17 @@ body.light .skills h1{
     opacity: .5;
 }
 
-body.light .skills-info{
+body.light .skills-info,
+body.light .option-skill li{
     background-color: var(--grey-light-color);
+}
+
+body.light .with-gs .skill{
+    background-color: var(--black-color);
+}
+
+body.light .with:hover{
+    border: 2px solid var(--black-color);
 }
 
 @media screen and (max-width: 1024px){
@@ -92,5 +289,18 @@ body.light .skills-info{
     .skills-info{
         display: flex;
         align-items: initial;
+        width: 95%;
     }
+
+    .option-skill{
+        width: auto;
+        flex-direction: column;
+    }
+
+    .option-skill li{
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    .
 }
