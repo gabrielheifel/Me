@@ -20,7 +20,7 @@ const turnOn = () => {
     });
 }
 
-// ---- SKILLS ----
+// ---- SKILLS ---- //
 const opSkill = () => {
     const opMe = document.querySelector('.me');
     const opWith = document.querySelector('.with');
