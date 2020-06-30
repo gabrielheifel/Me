@@ -28,13 +28,6 @@
     align-items: center;
 }
 
-.me{
-    border: 2px solid var(--first-color);
-}
-.with:hover{
-    border: 2px solid var(--grey-light-color);
-}
-
 .skills-info{
     background-color: var(--black-color);
     padding: 10px 30px 15px 30px;
@@ -65,6 +58,10 @@
     border-radius: 10px;
 }
 
+.me{
+    border: 2px solid var(--first-color);
+}
+
 .c{    
     width: 50%;
     animation: c 1s;
@@ -87,6 +84,11 @@
 }
 
 /*---- Me ----*/
+
+.without-gs .me{
+    border: 2px solid var(--first-color);
+}
+
 .without-gs .c{
     animation: c-without 1s;
 }
@@ -106,6 +108,14 @@
 /*---- With Google / Stackoverflow ----*/
 .with-gs .skill{
     background-color: var(--grey-light-color);
+}
+
+.with-gs .me{
+    border: none;
+}
+
+.with-gs .with{
+    border: 2px solid var(--grey-light-color);
 }
 
 .with-gs .c{
@@ -270,7 +280,7 @@ body.light .with-gs .skill{
     background-color: var(--black-color);
 }
 
-body.light .with:hover{
+body.light .with-gs .with{
     border: 2px solid var(--black-color);
 }
 
