@@ -1,0 +1,32 @@
+.projects{
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--grey-color);
+    height: 80%;
+}
+
+.projects h1{
+    font-size: var(--h1-font-size);
+    opacity: .2;
+}
+
+.projects-info h1{
+    font-size: var(--h2-font-size);
+    opacity: .5;
+}
+
+/* .projects-info{
+    background-color: var(--black-color);
+    padding: 30px;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 1.2rem var(--first-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+} */
