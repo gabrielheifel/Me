@@ -18,6 +18,18 @@
     opacity: .5;
 }
 
+body.light .projects{
+    background-color: var(--white-color);
+}
+
+body.light .projects h1{
+    opacity: .5;
+}
+
+body.light .projects-info h1{
+    opacity: .9;
+}
+
 /* .projects-info{
     background-color: var(--black-color);
     padding: 30px;
