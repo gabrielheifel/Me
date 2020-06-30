@@ -19,6 +19,10 @@
 }
 
 .option-skill li{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: normal;
+
     cursor: pointer;
     padding: 2px 15px 2px 15px;
     border-radius: 15px;
