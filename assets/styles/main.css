@@ -1,10 +1,10 @@
 /*Var color*/
 :root{
     --first-color: #4e1116;
-    --black-color: #000;
-    --white-color: #fff;
-    --grey-color: #0f0f0f;
-    --grey-light-color: #cfcfcf;
+    --black-color: #191919;
+    --white-color: #bdbebd;
+    --grey-color: #2c2c2c;
+    --grey-light-color: #d3d3d3;
 }
 
 /*Var fonts*/
@@ -89,6 +89,11 @@ footer{
     font-size: var(--normal-font-size);
 
     margin-right: 50vh;
+}
+
+.nav .logo span {
+    letter-spacing: 2px;
+    font-size: small;
 }
 
 .nav-links{
