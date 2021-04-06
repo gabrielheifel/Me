@@ -67,15 +67,15 @@
 }
 
 .c{    
-    width: 50%;
+    width: 30%;
     animation: c 1s;
 }
 .java{
-    width: 20%;
+    width: 10%;
     animation: java 1s;    
 }
 .js{
-    width: 40%;
+    width: 30%;
     animation: js 1s;    
 }
 .html{
@@ -83,7 +83,7 @@
     animation: html 1s;    
 }
 .css{
-    width: 60%;
+    width: 50%;
     animation: css 1s;    
 }
 
@@ -123,23 +123,23 @@
 }
 
 .with-gs .c{
-    width: 65%;
+    width: 40%;
     animation: c-with 1s;    
 }
 .with-gs .java{
-    width: 35%;
+    width: 20%;
     animation: java-with 1s;    
 }
 .with-gs .js{
-    width: 55%;
+    width: 40%;
     animation: js-with 1s;    
 }
 .with-gs .html{
-    width: 70%;
+    width: 65%;
     animation: html-with 1s;    
 }
 .with-gs .css{
-    width: 75%;
+    width: 65%;
     animation: css-with 1s;    
 }
 
@@ -149,7 +149,7 @@
         width: 0%;
     }
     100%{
-        width: 50%;
+        width: 30%;
     }
 }
 @keyframes java{
@@ -157,7 +157,7 @@
         width: 0%;
     }
     100%{
-        width: 20%;
+        width: 10%;
     }
 }
 @keyframes js{
@@ -165,7 +165,7 @@
         width: 0%;
     }
     100%{
-        width: 40%;
+        width: 30%;
     }
 }
 @keyframes html{
@@ -181,31 +181,31 @@
         width: 0%;
     }
     100%{
-        width: 60%;
+        width: 50%;
     }
 }
 @keyframes c-with{
     0%{
-        width: 50%;
+        width: 30%;
     }
     100%{
-        width: 65%;
+        width: 40%;
     }
 }
 @keyframes java-with{
     0%{
-        width: 20%;
+        width: 10%;
     }
     100%{
-        width: 35%;
+        width: 20%;
     }
 }
 @keyframes js-with{
     0%{
-        width: 40%;
+        width: 30%;
     }
     100%{
-        width: 55%;
+        width: 40%;
     }
 }
 @keyframes html-with{
@@ -213,18 +213,42 @@
         width: 50%;
     }
     100%{
-        width: 70%;
+        width: 65%;
     }
 }
 @keyframes css-with{
     0%{
-        width: 60%;
+        width: 50%;
     }
     100%{
-        width: 75%;
+        width: 65%;
     }
 }
 @keyframes c-without{
+    0%{
+        width: 40%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+@keyframes java-without{
+    0%{
+        width: 20%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+@keyframes js-without{
+    0%{
+        width: 40%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+@keyframes html-without{
     0%{
         width: 65%;
     }
@@ -232,36 +256,12 @@
         width: 50%;
     }
 }
-@keyframes java-without{
+@keyframes css-without{
     0%{
-        width: 35%;
-    }
-    100%{
-        width: 20%;
-    }
-}
-@keyframes js-without{
-    0%{
-        width: 55%;
-    }
-    100%{
-        width: 40%;
-    }
-}
-@keyframes html-without{
-    0%{
-        width: 70%;
+        width: 65%;
     }
     100%{
         width: 50%;
-    }
-}
-@keyframes css-without{
-    0%{
-        width: 75%;
-    }
-    100%{
-        width: 60%;
     }
 }
 

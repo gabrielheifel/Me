@@ -1,13 +1,13 @@
 .home{
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .home .home-info{
     padding-left: 1.5rem;
-    border-left: 5px solid var(--white-color);
+    border-left: 5px solid var(--first-color);
 }
 
 body.light .home-info{
@@ -24,6 +24,17 @@ body.light .home-info{
     font-size: var(--h2-font-size);
 }
 
+.image {
+    filter: grayscale(35%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    object-fit: contain;
+}
+
 @media screen and (max-width: 768px){
 
     footer{
@@ -34,8 +45,17 @@ body.light .home-info{
         display: flex;
         flex-direction: column;
     }
-
     .rede-social a{
         margin-bottom: 1rem;
+    }
+
+    .image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1096px) {
+    .image {
+        width: 30%;
     }
 }

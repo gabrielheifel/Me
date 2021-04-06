@@ -19,7 +19,7 @@
     font-weight: normal;
 
     background-color: var(--black-color);
-    padding: 30px;
+    padding: 28px;
     margin: 5px;
     border-radius: 15px;
     box-shadow: 0 0 1.2rem var(--first-color);
@@ -32,6 +32,7 @@
 
 .about-info p{
     font-size: var(--small-font-size);
+    bottom: 2px;
 }
 
 body.light .about{
