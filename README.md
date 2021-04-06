@@ -4,5 +4,5 @@
 
 inspiração https://github.com/bedimcode/portfolio-personal
 
-Projeto focado no aprendizado em HTML e CSS
-Utilizando um pouco de JS.
+<p>Projeto focado no aprendizado em HTML e CSS</p>
+<p>Utilizando um pouco de JS.</p>
